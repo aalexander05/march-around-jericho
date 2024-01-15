@@ -19,6 +19,11 @@ var submitted_answers = []
 func _ready():
 	Signals.next_question.connect(get_question.bind())
 	Signals.answer_submitted.connect(check_question.bind())
+	
+	
+	show_question = true
+	get_question()
+	get_node("../CanvasLayer").show()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

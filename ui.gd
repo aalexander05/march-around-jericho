@@ -81,10 +81,11 @@ func _on_game_manager_clear_messages():
 
 
 func _on_game_manager_set_possible_points(possible_points, original_max_possible_points):
-	var new_possible_points_text = ""
-	for p in range(possible_points):
-		new_possible_points_text += "🦶"
+	var new_possible_points_text = "Possible Points: " + str(possible_points)
 	
-	for p in range(original_max_possible_points - possible_points):
-		new_possible_points_text += "❌"
+	#for p in range(possible_points):
+		#new_possible_points_text += "🦶"
+	#
+	#for p in range(original_max_possible_points - possible_points):
+		#new_possible_points_text += "❌"
 	$MarginContainer/NinePatchRect/PossiblePoints.text = new_possible_points_text

@@ -116,14 +116,15 @@ autowrap_mode = 2
 [node name="PossiblePoints" type="Label" parent="MarginContainer/NinePatchRect"]
 custom_minimum_size = Vector2(0.615, 0)
 layout_mode = 2
-offset_left = 16.0
-offset_top = 301.0
-offset_right = 366.0
-offset_bottom = 343.0
+offset_left = 8.0
+offset_top = 56.0
+offset_right = 968.0
+offset_bottom = 98.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_4mbla")
 theme_override_font_sizes/font_size = 32
 text = "Possible Points"
+horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 script = ExtResource("6_523ou")
@@ -138,12 +139,6 @@ offset_bottom = 642.0
 layout_mode = 2
 theme_override_constants/separation = 285
 alignment = 1
-
-[node name="Previous" type="Button" parent="MenuControls/HBoxContainer"]
-layout_mode = 2
-theme_override_fonts/font = ExtResource("3_4mbla")
-theme_override_font_sizes/font_size = 31
-text = "Previous"
 
 [node name="Next" type="Button" parent="MenuControls/HBoxContainer"]
 layout_mode = 2
