@@ -551,3 +551,4 @@ libraries = {
 [connection signal="clear_messages" from="GameManager" to="CanvasLayer" method="_on_game_manager_clear_messages"]
 [connection signal="correct_answer" from="GameManager" to="CanvasLayer" method="_on_game_manager_correct_answer"]
 [connection signal="incorrect_answer" from="GameManager" to="CanvasLayer" method="_on_game_manager_incorrect_answer"]
+[connection signal="set_possible_points" from="GameManager" to="CanvasLayer" method="_on_game_manager_set_possible_points"]

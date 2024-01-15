@@ -5,9 +5,14 @@ signal change_question(question)
 signal correct_answer()
 signal incorrect_answer()
 signal clear_messages()
+signal set_possible_points(possible_points, original_max_possible_points)
 
+var current_question = {}
 var show_question = false
 var score = 0
+var steps_can_go_if_correct = 0 # set by each question's answer count
+var already_answered = false
+var submitted_answers = []
 
 
 # Called when the node enters the scene tree for the first time.
@@ -32,25 +37,54 @@ func _input(event):
 			
 			
 func get_question():
+	already_answered = false
+	submitted_answers = []
 	clear_messages.emit()
-	var question = StaticData.getNextQuestion()
-	var new_text = question["Question"]
+	current_question = StaticData.getNextQuestion()
+	
+	# set text
+	var new_text = current_question["Question"]
 	new_text += "\n"
-	new_text += question["Correct Answer"]
+	new_text += current_question["Correct Answer"]
 	new_text += "\n"
-	for a in question["Other Multiple Choice Answers"]:
+	for a in current_question["Other Multiple Choice Answers"]:
 		new_text += a
 		new_text += "\n"
+	
+	# set potential points scoring
+	steps_can_go_if_correct	= len(current_question["Other Multiple Choice Answers"])
+	set_possible_points.emit(steps_can_go_if_correct, len(current_question["Other Multiple Choice Answers"]))
+	
+	# emit signals
 	change_question_text.emit(new_text)
-	change_question.emit(question)
+	change_question.emit(current_question)
 
 func check_question(text):
+	
+	if already_answered:
+		# don't award points or anything. just leave.
+		# (they already answered the question)
+		return
+	
 	if text == StaticData.currentQuestion["Correct Answer"]:
-		score += 1
+		already_answered = true;
+		score += steps_can_go_if_correct
 		correct_answer.emit()
 		# get_question();
 		$"../HUD".set_score(score)
 	else:
+		for a in submitted_answers:
+			if a == text:
+				return
+		
+		submitted_answers.push_back(text)
+		
+		
+		
+		if steps_can_go_if_correct > 0:
+			steps_can_go_if_correct -= 1
+			set_possible_points.emit(steps_can_go_if_correct, len(current_question["Other Multiple Choice Answers"]))
+			
 		incorrect_answer.emit()
 		
 	

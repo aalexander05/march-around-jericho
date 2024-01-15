@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://chca6o6w7gneo"]
+[gd_scene load_steps=8 format=3 uid="uid://chca6o6w7gneo"]
 
 [ext_resource type="Script" path="res://dialog.gd" id="1_mmvi3"]
 [ext_resource type="Texture2D" uid="uid://ixd3db33du1h" path="res://text_box_bg.png" id="2_u68tk"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" path="res://QuestionDisplay.gd" id="3_44xqu"]
 [ext_resource type="Script" path="res://answer_button.gd" id="5_128xi"]
 [ext_resource type="Script" path="res://Next.gd" id="6_42io6"]
+[ext_resource type="Script" path="res://PossiblePoints.gd" id="6_523ou"]
 
 [node name="CanvasLayer" type="CanvasLayer"]
 
@@ -82,8 +83,8 @@ text = "Anser4 Anser4 Anser4 Anser4"
 script = ExtResource("5_128xi")
 
 [node name="CorrectMessage" type="Label" parent="MarginContainer/NinePatchRect"]
-visible = false
 custom_minimum_size = Vector2(0.615, 0)
+layout_mode = 0
 offset_left = 8.0
 offset_top = 301.0
 offset_right = 967.0
@@ -99,6 +100,7 @@ autowrap_mode = 2
 [node name="IncorrectMessage" type="Label" parent="MarginContainer/NinePatchRect"]
 visible = false
 custom_minimum_size = Vector2(0.615, 0)
+layout_mode = 0
 offset_left = 8.0
 offset_top = 301.0
 offset_right = 967.0
@@ -110,6 +112,21 @@ text = "Incorrect"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
+
+[node name="PossiblePoints" type="Label" parent="MarginContainer/NinePatchRect"]
+custom_minimum_size = Vector2(0.615, 0)
+layout_mode = 2
+offset_left = 16.0
+offset_top = 301.0
+offset_right = 366.0
+offset_bottom = 343.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_4mbla")
+theme_override_font_sizes/font_size = 32
+text = "Possible Points"
+vertical_alignment = 1
+autowrap_mode = 2
+script = ExtResource("6_523ou")
 
 [node name="MenuControls" type="MarginContainer" parent="."]
 offset_left = 100.0
