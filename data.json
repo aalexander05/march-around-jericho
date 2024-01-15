@@ -1,0 +1,541 @@
+{
+  "1": {
+	"Question": "What year did the flood occur?",
+	"Other Multiple Choice Answers": [
+	  "1513 BCE",
+	  "607 BCE"
+	],
+	"Correct Answer": "2370 BCE",
+	"Refernece": "https://www.jw.org/finder?wtlocale=E&docid=1200001150&srctype=wol&srcid=share&par=2"
+  },
+  "2": {
+	"Question": "What was the prophet Daniel's Babylonian name?",
+	"Other Multiple Choice Answers": [
+	  "Fred",
+	  "Shadrach",
+	  "Nebuchadnezzar"
+	],
+	"Correct Answer": "Belteshazzar",
+	"Refernece": "https://wol.jw.org/en/wol/d/r1/lp-e/1200001117#h=5"
+  },
+  "3": {
+	"Question": "How big was Noah's ark?",
+	"Other Multiple Choice Answers": [
+	  "800 sq ft",
+	  "big as the titanic"
+	],
+	"Correct Answer": "300 cubits long, 50 cubits wide, and 30 cubits high",
+	"Refernece": null
+  },
+  "4": {
+	"Question": "What year did the Bible Students change their name to Jehovah's Witnesses?",
+	"Other Multiple Choice Answers": [
+	  "1935",
+	  "1914"
+	],
+	"Correct Answer": "1931",
+	"Refernece": null
+  },
+  "5": {
+	"Question": "Which one of Jesus's apostles saw a vision of unclean animals and was told to 'slaughter and eat' them?",
+	"Other Multiple Choice Answers": [
+	  "Paul",
+	  "James"
+	],
+	"Correct Answer": "Peter",
+	"Refernece": "Acts 10:11-13"
+  },
+  "6": {
+	"Question": "What was the first kind of bird that Noah released from the ark to check if the waters had receded?",
+	"Other Multiple Choice Answers": [
+	  "Dove",
+	  "Ostrich"
+	],
+	"Correct Answer": "Raven",
+	"Refernece": null
+  },
+  "7": {
+	"Question": "How many stones did David select to prepare in fighting Goliath?",
+	"Other Multiple Choice Answers": [
+	  "6",
+	  "7"
+	],
+	"Correct Answer": "5",
+	"Refernece": null
+  },
+  "8": {
+	"Question": "Who replaced Judas after his betrayal?",
+	"Other Multiple Choice Answers": [
+	  "Paul",
+	  "Timothy"
+	],
+	"Correct Answer": "Matthias",
+	"Refernece": "https://wol.jw.org/en/wol/d/r1/lp-e/1102009043?q=judas+replaced&p=par"
+  },
+  "9": {
+	"Question": "Who baptized Jesus?",
+	"Other Multiple Choice Answers": [
+	  "He baptised himself",
+	  "Joseph"
+	],
+	"Correct Answer": "John the Baptist",
+	"Refernece": null
+  },
+  "10": {
+	"Question": "In Nehemiah's time, how many days did it take to complete the rebuilding of the walls of Jererusalem?",
+	"Other Multiple Choice Answers": [
+	  "14",
+	  "49",
+	  "157"
+	],
+	"Correct Answer": "52",
+	"Refernece": "https://wol.jw.org/en/wol/d/r1/lp-e/1200003212#h=12"
+  },
+  "11": {
+	"Question": "Who was the apostle Andrew's brother?",
+	"Other Multiple Choice Answers": [
+	  "James",
+	  "Bartholomew"
+	],
+	"Correct Answer": "Peter",
+	"Refernece": "https://wol.jw.org/en/wol/d/r1/lp-e/1200000273#h=3"
+  },
+  "12": {
+	"Question": "What year was Aaron born?",
+	"Other Multiple Choice Answers": [
+	  "1513 BCE",
+	  "607 BCE",
+	  "2370 BCE"
+	],
+	"Correct Answer": "1597 BCE",
+	"Refernece": "https://wol.jw.org/en/wol/d/r1/lp-e/1200000005#h=3"
+  },
+  "13": {
+	"Question": "Before marrying King David, Abigail was married to a man who's name means \"senseless\" or \"stupid\". What was his name?",
+	"Other Multiple Choice Answers": [
+	  "Nebuchadnezzar",
+	  "Korah",
+	  "Achan"
+	],
+	"Correct Answer": "Nabal",
+	"Refernece": "1 Samuel 25:25"
+  },
+  "14": {
+	"Question": "How old was Abram when he was given the name Abraham?",
+	"Other Multiple Choice Answers": [
+	  "53",
+	  "33",
+	  "77"
+	],
+	"Correct Answer": "99",
+	"Refernece": "https://wol.jw.org/en/wol/d/r1/lp-e/1200000060"
+  },
+  "15": {
+	"Question": "Shem and Abraham's lives overlapped.",
+	"Other Multiple Choice Answers": ["FALSE"],
+	"Correct Answer": "TRUE",
+	"Refernece": "https://wol.jw.org/en/wol/d/r1/lp-e/1200000060#h=6"
+  },
+  "16": {
+	"Question": "How old was Abram when he began to move to the land of Canaan?",
+	"Other Multiple Choice Answers": [
+	  "90",
+	  "62",
+	  "45"
+	],
+	"Correct Answer": "75",
+	"Refernece": "https://wol.jw.org/en/wol/d/r1/lp-e/1200000060#h=9"
+  },
+  "17": {
+	"Question": "Which man's home did the Ark of the Covenant remain for 70 years before being transferred to Jerusalem?",
+	"Other Multiple Choice Answers": [
+	  "King David",
+	  "Samuel",
+	  "King Solomon"
+	],
+	"Correct Answer": "Abinadab",
+	"Refernece": "https://wol.jw.org/en/wol/d/r1/lp-e/1200000046#h=4"
+  },
+  "18": {
+	"Question": "When Achan took from the city of Jerico what \"[belonged] to Jehovah\" (Joshua 6:17), what items did he not take?",
+	"Other Multiple Choice Answers": [
+	  "A garment from Shinar",
+	  "50-shekel gold bar",
+	  "200 silver shekels"
+	],
+	"Correct Answer": "An acacia wood table",
+	"Refernece": "https://wol.jw.org/en/wol/d/r1/lp-e/1200000074#h=4"
+  },
+  "19": {
+	"Question": "Who wrote the Bible book of Acts?",
+	"Other Multiple Choice Answers": [
+	  "Paul",
+	  "Matthew"
+	],
+	"Correct Answer": "Luke",
+	"Refernece": "https://wol.jw.org/en/wol/d/r1/lp-e/1200000084"
+  },
+  "20": {
+	"Question": "Who wrote the Bible book of Judges?",
+	"Other Multiple Choice Answers": [
+	  "Sampson",
+	  "David",
+	  "Moses"
+	],
+	"Correct Answer": "Samuel",
+	"Refernece": null
+  },
+  "21": {
+	"Question": "Who wrote the Bible book of Ruth?",
+	"Other Multiple Choice Answers": [
+	  "Ruth",
+	  "Nehemiah",
+	  "Solomon"
+	],
+	"Correct Answer": "Samuel",
+	"Refernece": null
+  },
+  "22": {
+	"Question": "Who wrote 1 Kings and 2 Kings?",
+	"Other Multiple Choice Answers": [
+	  "David",
+	  "Solomon",
+	  "Samuel"
+	],
+	"Correct Answer": "Jeremiah",
+	"Refernece": null
+  },
+  "23": {
+	"Question": "Who wrote 1 Chronicles and 2 Chronicles?",
+	"Other Multiple Choice Answers": [
+	  "Moses",
+	  "David",
+	  "Paul"
+	],
+	"Correct Answer": "Ezra",
+	"Refernece": null
+  },
+  "24": {
+	"Question": "Who wrote the Bible book of Esther?",
+	"Other Multiple Choice Answers": [
+	  "Esther",
+	  "Moses",
+	  "Ezra"
+	],
+	"Correct Answer": "Mordecai",
+	"Refernece": null
+  },
+  "25": {
+	"Question": "Who wrote the Bible book of Ecclesiastes?",
+	"Other Multiple Choice Answers": [
+	  "David",
+	  "Paul",
+	  "Jeremiah"
+	],
+	"Correct Answer": "Solomon",
+	"Refernece": null
+  },
+  "26": {
+	"Question": "Who wrote the Bible book of Lamentations?",
+	"Other Multiple Choice Answers": [
+	  "Solomon",
+	  "David",
+	  "Samuel"
+	],
+	"Correct Answer": "Jeremiah",
+	"Refernece": null
+  },
+  "27": {
+	"Question": "Who wrote the Bible book of Revelation?",
+	"Other Multiple Choice Answers": [
+	  "Peter",
+	  "Matthew",
+	  "Mark"
+	],
+	"Correct Answer": "John",
+	"Refernece": null
+  },
+  "28": {
+	"Question": "What location was the Ark of the Covenant kept in the temple?",
+	"Other Multiple Choice Answers": [
+	  "On the roof",
+	  "In the inner courtyard",
+	  "Between the pillars"
+	],
+	"Correct Answer": "Most Holy",
+	"Refernece": null
+  },
+  "29": {
+	"Question": "Who was Jacob's son Asher's mother?",
+	"Other Multiple Choice Answers": [
+	  "Rachel",
+	  "Leah"
+	],
+	"Correct Answer": "Zilpah",
+	"Refernece": null
+  },
+  "30": {
+	"Question": "In ancient Israel, what was a the nearest male relative called who was under obligation to atone for one who had been killed?",
+	"Other Multiple Choice Answers": [
+	  "Mr. Revenge",
+	  "Avenger of Life",
+	  "Redeemer of Blood"
+	],
+	"Correct Answer": "Avenger of Blood",
+	"Refernece": "https://wol.jw.org/en/wol/d/r1/lp-e/1200000473"
+  },
+  "31": {
+	"Question": "What is the name of Jacob's 12th son?",
+	"Other Multiple Choice Answers": [
+	  "Joseph",
+	  "Asher",
+	  "Judah"
+	],
+	"Correct Answer": "Benjamin",
+	"Refernece": null
+  },
+  "32": {
+	"Question": "What is the name of Jacob's firstborn son?",
+	"Other Multiple Choice Answers": [
+	  "Naphtali",
+	  "Dan",
+	  "Joseph"
+	],
+	"Correct Answer": "Reuben",
+	"Refernece": null
+  },
+  "33": {
+	"Question": "Only three Roman Caesars who were ruling during the period covered by the Christian Greek Scriptures were mentioned by name. Which name is not included among them?",
+	"Other Multiple Choice Answers": [
+	  "Augustus",
+	  "Tiberius",
+	  "Claudius"
+	],
+	"Correct Answer": "Caligula",
+	"Refernece": "https://wol.jw.org/en/wol/d/r1/lp-e/1200000852"
+  },
+  "34": {
+	"Question": "How many days did the 12 spies that Moses sent out preview the land?",
+	"Other Multiple Choice Answers": [
+	  "150",
+	  "14",
+	  "30"
+	],
+	"Correct Answer": "40",
+	"Refernece": "https://wol.jw.org/en/wol/d/r1/lp-e/1200000863"
+  },
+  "35": {
+	"Question": "The statue of what type of angel was put on top of the Ark of the Covenant?",
+	"Other Multiple Choice Answers": [
+	  "Archangel",
+	  "Seraph"
+	],
+	"Correct Answer": "Cherub",
+	"Refernece": "https://www.jw.org/finder?srcid=jwlshare&wtlocale=E&prefer=lang&docid=1200000945"
+  },
+  "36": {
+	"Question": "Who was the 1st non-Jew to have Holy Spirit fall upon him?",
+	"Other Multiple Choice Answers": [
+	  "Silas",
+	  "Timothy"
+	],
+	"Correct Answer": "Cornelius",
+	"Refernece": "Acts 10:44,45\nhttps://wol.jw.org/en/wol/d/r1/lp-e/1200001041?q=Cornelius&p=par#h=4"
+  },
+  "37": {
+	"Question": "Which political ruler did Jehovah have an angel strike down with worms so that he died?",
+	"Other Multiple Choice Answers": [
+	  "Tiberius Caesar",
+	  "Nebuchadnezzar"
+	],
+	"Correct Answer": "Harod Agrippa",
+	"Refernece": "Acts 12:23"
+  },
+  "38": {
+	"Question": "Who lived for 969 years?",
+	"Other Multiple Choice Answers": [
+	  "Adam",
+	  "Noah"
+	],
+	"Correct Answer": "Methuselah",
+	"Refernece": "Genesis 5:27"
+  },
+  "39": {
+	"Question": "What animal did Jesus liken King Herod to and why?",
+	"Other Multiple Choice Answers": [
+	  "Donkey because of his stubbornness",
+	  "Lion since he was a King"
+	],
+	"Correct Answer": "Fox because of his craftiness",
+	"Refernece": "Luke 13:32"
+  },
+  "40": {
+	"Question": "How many years did Jehovah strike Nebuchadnezzar with insanity?",
+	"Other Multiple Choice Answers": [
+	  "Six",
+	  "Ten",
+	  "Two"
+	],
+	"Correct Answer": "Seven",
+	"Refernece": "Daniel 4:32"
+  },
+  "41": {
+	"Question": "Which profit did Jehovah have walk around naked and barefoot?",
+	"Other Multiple Choice Answers": [
+	  "Moses",
+	  "Jeremiah",
+	  "Elisha"
+	],
+	"Correct Answer": "Isaiah",
+	"Refernece": "Isaiah 20:3"
+  },
+  "42": {
+	"Question": "What insect did John the baptizer eat along with honey?",
+	"Other Multiple Choice Answers": [
+	  "Ants",
+	  "Bees"
+	],
+	"Correct Answer": "Locusts",
+	"Refernece": "Mathew 3:4"
+  },
+  "43": {
+	"Question": "How many silver coins did Judas Iscariot receive for betraying Jesus?",
+	"Other Multiple Choice Answers": [
+	  "42",
+	  "100",
+	  "2"
+	],
+	"Correct Answer": "30",
+	"Refernece": "Mathew 26:15"
+  },
+  "44": {
+	"Question": "What kind of bird brought food to the profit Elijah?",
+	"Other Multiple Choice Answers": [
+	  "Ostriches",
+	  "Chickens",
+	  "Finches"
+	],
+	"Correct Answer": "Ravens",
+	"Refernece": "1 Kings 17:6"
+  },
+  "45": {
+	"Question": "Which city's name means confusion?",
+	"Other Multiple Choice Answers": [
+	  "Ur",
+	  "Damascus"
+	],
+	"Correct Answer": "Babel",
+	"Refernece": "Gen 11:9"
+  },
+  "46": {
+	"Question": "Adam and Eve used what kind of leaves to make clothes?",
+	"Other Multiple Choice Answers": [
+	  "Oak tree leaves",
+	  "Elm tree leaves"
+	],
+	"Correct Answer": "Fig leaves",
+	"Refernece": "Gen 3:7"
+  },
+  "47": {
+	"Question": "Which directions were the cherubs posted to guard the garden of Eden?",
+	"Other Multiple Choice Answers": [
+	  "West",
+	  "North",
+	  "South"
+	],
+	"Correct Answer": "East",
+	"Refernece": "Gen 3:24"
+  },
+  "48": {
+	"Question": "How many angles did Jehovah send to warn Lot to leave Sodom?",
+	"Other Multiple Choice Answers": [
+	  "1",
+	  "4",
+	  "7"
+	],
+	"Correct Answer": "2",
+	"Refernece": "Gen 19:1"
+  },
+  "49": {
+	"Question": "What color was the stew that Esau sold his birth right for?",
+	"Other Multiple Choice Answers": [
+	  "White",
+	  "The Account Doesn't Say"
+	],
+	"Correct Answer": "Red",
+	"Refernece": "Gen 25:30"
+  },
+  "50": {
+	"Question": "What body part was dislocated when Jacob wrestled with an angel?",
+	"Other Multiple Choice Answers": [
+	  "Shoulder",
+	  "Big toe",
+	  "Knee"
+	],
+	"Correct Answer": "Hip",
+	"Refernece": "Gen 32:25"
+  },
+  "51": {
+	"Question": "What did Joseph's brothers do to make Jacob think his son was dead?",
+	"Other Multiple Choice Answers": ["They told him he drank bad wine"],
+	"Correct Answer": "They dipped his coat in goats blood",
+	"Refernece": "Gen 37:31"
+  },
+  "52": {
+	"Question": "Which brother of Joseph's didn't want him killed?",
+	"Other Multiple Choice Answers": [
+	  "Judah",
+	  "Asher"
+	],
+	"Correct Answer": "Reuben",
+	"Refernece": "Gen 37:22,29"
+  },
+  "53": {
+	"Question": "Fill in the blank: Matthew 23 : 13 “Woe to you, scribes and Pharisees, _________ because you shut up the Kingdom of the heavens before men; for you yourselves do not go in, neither do you permit those on their way in to go in",
+	"Other Multiple Choice Answers": [
+	  "Idiots!",
+	  "Morons!"
+	],
+	"Correct Answer": "Hypocrites!",
+	"Refernece": "Matthew 23 : 13"
+  },
+  "55": {
+	"Question": "Fill in the blank (4 words)\n'Ponder over these things _ _ _ _, so that your advancement may be plainly seen by all people.'",
+	"Other Multiple Choice Answers": [
+	  "Read all of them",
+	  "Do all of them",
+	  "Be motivated by them"
+	],
+	"Correct Answer": "Be absorbed in them",
+	"Refernece": "1 Timothy 4:15"
+  },
+  "56": {
+	"Question": "Fill in the blank.\n'Look! The eye of Jehovah watches over those _____ him, Those waiting for his loyal love.'",
+	"Other Multiple Choice Answers": [
+	  "Loving",
+	  "Obeying",
+	  "Watching"
+	],
+	"Correct Answer": "Fearing",
+	"Refernece": "Psalm 33:18"
+  },
+  "57": {
+	"Question": "Fill in the blank.\n'Taste and see that Jehovah is ____'",
+	"Other Multiple Choice Answers": [
+	  "Tasty",
+	  "Salty",
+	  "Righteous"
+	],
+	"Correct Answer": "Good",
+	"Refernece": "Psalm 34:8"
+  },
+  "58": {
+	"Question": "Finish the song lyric. (4 words)\n'The living and true God—The God of all creation In ev'ry generation _ _ _ _'",
+	"Other Multiple Choice Answers": [
+	  "Jehovah is my God",
+	  "Jehovah is my Friend"
+	],
+	"Correct Answer": "Jehovah is your name",
+	"Refernece": "Sing out Joyfully Song 2"
+  }
+}

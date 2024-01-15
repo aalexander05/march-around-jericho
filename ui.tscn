@@ -1,0 +1,115 @@
+[gd_scene load_steps=8 format=3 uid="uid://chca6o6w7gneo"]
+
+[ext_resource type="Script" path="res://dialog.gd" id="1_mmvi3"]
+[ext_resource type="Texture2D" uid="uid://ixd3db33du1h" path="res://text_box_bg.png" id="2_u68tk"]
+[ext_resource type="FontFile" uid="uid://bqgxm66o0gbqn" path="res://Calistoga-Regular.ttf" id="3_4mbla"]
+[ext_resource type="Script" path="res://QuestionDisplay.gd" id="3_44xqu"]
+[ext_resource type="Script" path="res://answer_button.gd" id="5_128xi"]
+[ext_resource type="Theme" uid="uid://d0phl6esvqp11" path="res://button.tres" id="5_cp1a4"]
+[ext_resource type="Script" path="res://Next.gd" id="6_42io6"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+custom_minimum_size = Vector2(0.295, 0)
+offset_left = 74.0
+offset_top = 33.0
+offset_right = 1103.0
+offset_bottom = 607.0
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
+script = ExtResource("1_mmvi3")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="MarginContainer"]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("2_u68tk")
+region_rect = Rect2(0, 0, 48, 48)
+
+[node name="QuestionDisplay" type="Label" parent="MarginContainer/NinePatchRect"]
+custom_minimum_size = Vector2(0.615, 0)
+layout_mode = 2
+offset_left = 9.0
+offset_top = 58.0
+offset_right = 968.0
+offset_bottom = 325.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_4mbla")
+theme_override_font_sizes/font_size = 32
+text = "This is where the question text will go. This is where the question text will go. This is where the question text will go. "
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+script = ExtResource("3_44xqu")
+
+[node name="HFlowContainer" type="HFlowContainer" parent="MarginContainer/NinePatchRect"]
+layout_mode = 0
+offset_top = 348.0
+offset_right = 972.0
+offset_bottom = 461.0
+theme_override_constants/h_separation = 25
+theme_override_constants/v_separation = 15
+alignment = 1
+
+[node name="Button" type="Button" parent="MarginContainer/NinePatchRect/HFlowContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_4mbla")
+theme_override_font_sizes/font_size = 32
+text = "Answer 1"
+script = ExtResource("5_128xi")
+
+[node name="Button2" type="Button" parent="MarginContainer/NinePatchRect/HFlowContainer"]
+layout_mode = 2
+theme = ExtResource("5_cp1a4")
+theme_override_fonts/font = ExtResource("3_4mbla")
+theme_override_font_sizes/font_size = 32
+text = "Answer 2"
+script = ExtResource("5_128xi")
+
+[node name="Button3" type="Button" parent="MarginContainer/NinePatchRect/HFlowContainer"]
+layout_mode = 2
+theme = ExtResource("5_cp1a4")
+theme_override_fonts/font = ExtResource("3_4mbla")
+theme_override_font_sizes/font_size = 32
+text = "Answer 3"
+script = ExtResource("5_128xi")
+
+[node name="Button4" type="Button" parent="MarginContainer/NinePatchRect/HFlowContainer"]
+layout_mode = 2
+theme = ExtResource("5_cp1a4")
+theme_override_fonts/font = ExtResource("3_4mbla")
+theme_override_font_sizes/font_size = 32
+text = "Anser4 Anser4 Anser4 Anser4"
+script = ExtResource("5_128xi")
+
+[node name="MenuControls" type="MarginContainer" parent="."]
+offset_left = 100.0
+offset_top = 590.0
+offset_right = 1073.0
+offset_bottom = 642.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MenuControls"]
+layout_mode = 2
+theme_override_constants/separation = 285
+alignment = 1
+
+[node name="Previous" type="Button" parent="MenuControls/HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_4mbla")
+theme_override_font_sizes/font_size = 31
+text = "Previous"
+
+[node name="Next" type="Button" parent="MenuControls/HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_4mbla")
+theme_override_font_sizes/font_size = 31
+text = "Next"
+script = ExtResource("6_42io6")
+
+[connection signal="pressed" from="MarginContainer/NinePatchRect/HFlowContainer/Button" to="MarginContainer/NinePatchRect/HFlowContainer/Button" method="_on_pressed"]
+[connection signal="pressed" from="MarginContainer/NinePatchRect/HFlowContainer/Button2" to="MarginContainer/NinePatchRect/HFlowContainer/Button2" method="_on_pressed"]
+[connection signal="pressed" from="MarginContainer/NinePatchRect/HFlowContainer/Button3" to="MarginContainer/NinePatchRect/HFlowContainer/Button3" method="_on_pressed"]
+[connection signal="pressed" from="MarginContainer/NinePatchRect/HFlowContainer/Button4" to="MarginContainer/NinePatchRect/HFlowContainer/Button4" method="_on_pressed"]
+[connection signal="pressed" from="MenuControls/HBoxContainer/Next" to="MenuControls/HBoxContainer/Next" method="_on_pressed"]

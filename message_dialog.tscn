@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://dosgcbpcvqu1f"]
+
+[ext_resource type="Texture2D" uid="uid://ixd3db33du1h" path="res://text_box_bg.png" id="1_28tsy"]
+[ext_resource type="FontFile" uid="uid://bqgxm66o0gbqn" path="res://Calistoga-Regular.ttf" id="2_toq47"]
+
+[node name="MessageDialog" type="CanvasLayer"]
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+custom_minimum_size = Vector2(0.295, 0)
+offset_left = 74.0
+offset_top = 33.0
+offset_right = 1103.0
+offset_bottom = 607.0
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
+
+[node name="NinePatchRect" type="NinePatchRect" parent="MarginContainer"]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("1_28tsy")
+region_rect = Rect2(0, 0, 48, 48)
+
+[node name="Dialog" type="Label" parent="MarginContainer/NinePatchRect"]
+custom_minimum_size = Vector2(0.615, 0)
+layout_mode = 2
+offset_left = 5.0
+offset_top = 125.0
+offset_right = 964.0
+offset_bottom = 392.0
+theme_override_colors/font_color = Color(0.113725, 0.380392, 0.2, 1)
+theme_override_fonts/font = ExtResource("2_toq47")
+theme_override_font_sizes/font_size = 64
+text = "Correct!"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
