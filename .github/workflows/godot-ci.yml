@@ -40,6 +40,8 @@ jobs:
         run: |
           git clone https://github.com/gzuidhof/coi-serviceworker.git
           mv coi-serviceworker/coi-serviceworker.js build/web/coi-serviceworker.js
+          ls
+          
           sed -i '3 i <script src="coi-serviceworker.js"></script>' build/web/index.html 
 
       - name: Deploy
