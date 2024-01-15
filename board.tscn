@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://buxya1i2sigoj"]
+[gd_scene load_steps=20 format=3 uid="uid://buxya1i2sigoj"]
 
 [ext_resource type="Script" path="res://board.gd" id="1_d3f3c"]
 [ext_resource type="Texture2D" uid="uid://c6itxlrwe6e4v" path="res://Solaria Demo Update 01.png" id="1_t1u46"]
@@ -6,8 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://chca6o6w7gneo" path="res://ui.tscn" id="2_vj12o"]
 [ext_resource type="Script" path="res://Sprite2D.gd" id="3_38k2e"]
 [ext_resource type="Script" path="res://ui.gd" id="4_5sndb"]
-[ext_resource type="PackedScene" uid="uid://dosgcbpcvqu1f" path="res://message_dialog.tscn" id="5_0org7"]
-[ext_resource type="Script" path="res://message_dialog.gd" id="6_c1gpa"]
 [ext_resource type="PackedScene" uid="uid://kyvdagipo0f0" path="res://hud.tscn" id="7_8jxp3"]
 [ext_resource type="Script" path="res://CharacterBody2D.gd" id="8_typ0w"]
 [ext_resource type="Texture2D" uid="uid://bhf07sh1ke1ev" path="res://icon.svg" id="9_eam0l"]
@@ -491,10 +489,6 @@ script = ExtResource("10_7tq1y")
 visible = false
 script = ExtResource("4_5sndb")
 
-[node name="MessageDialog" parent="." instance=ExtResource("5_0org7")]
-visible = false
-script = ExtResource("6_c1gpa")
-
 [node name="HUD" parent="." instance=ExtResource("7_8jxp3")]
 offset = Vector2(8.85, 0)
 transform = Transform2D(1, 0, 0, 1, 8.85, 0)
@@ -554,4 +548,6 @@ libraries = {
 
 [connection signal="change_question" from="GameManager" to="CanvasLayer" method="_on_game_manager_change_question"]
 [connection signal="change_question_text" from="GameManager" to="CanvasLayer" method="_on_game_manager_change_question_text"]
-[connection signal="correct_answer" from="GameManager" to="MessageDialog" method="_on_game_manager_correct_answer"]
+[connection signal="clear_messages" from="GameManager" to="CanvasLayer" method="_on_game_manager_clear_messages"]
+[connection signal="correct_answer" from="GameManager" to="CanvasLayer" method="_on_game_manager_correct_answer"]
+[connection signal="incorrect_answer" from="GameManager" to="CanvasLayer" method="_on_game_manager_incorrect_answer"]

@@ -3,6 +3,8 @@ extends Node
 signal change_question_text(new_text)
 signal change_question(question)
 signal correct_answer()
+signal incorrect_answer()
+signal clear_messages()
 
 var show_question = false
 var score = 0
@@ -30,6 +32,7 @@ func _input(event):
 			
 			
 func get_question():
+	clear_messages.emit()
 	var question = StaticData.getNextQuestion()
 	var new_text = question["Question"]
 	new_text += "\n"
@@ -45,9 +48,9 @@ func check_question(text):
 	if text == StaticData.currentQuestion["Correct Answer"]:
 		score += 1
 		correct_answer.emit()
-		get_question();
+		# get_question();
 		$"../HUD".set_score(score)
 	else:
-		get_question();
+		incorrect_answer.emit()
 		
 	

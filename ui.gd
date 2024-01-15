@@ -1,5 +1,6 @@
 extends CanvasLayer
 
+var hide_incorrect_message_timer = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -8,7 +9,13 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	
+	if hide_incorrect_message_timer > 0:
+		hide_incorrect_message_timer -= delta
+		if hide_incorrect_message_timer <= 0:
+			# incorrect message is shown and needs to be hidden
+			$MarginContainer/NinePatchRect/IncorrectMessage.hide()
+			
 
 
 func _on_game_manager_change_question_text(new_text):
@@ -52,3 +59,16 @@ func _on_game_manager_change_question(question):
 		if b.text == "":
 			b.hide()
 	
+
+func _on_game_manager_incorrect_answer():
+	$MarginContainer/NinePatchRect/IncorrectMessage.show()
+	hide_incorrect_message_timer = 3
+
+
+func _on_game_manager_correct_answer():
+	$MarginContainer/NinePatchRect/CorrectMessage.show()
+
+
+func _on_game_manager_clear_messages():
+	$MarginContainer/NinePatchRect/IncorrectMessage.hide()
+	$MarginContainer/NinePatchRect/CorrectMessage.hide()

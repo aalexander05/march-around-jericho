@@ -1,11 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://chca6o6w7gneo"]
+[gd_scene load_steps=7 format=3 uid="uid://chca6o6w7gneo"]
 
 [ext_resource type="Script" path="res://dialog.gd" id="1_mmvi3"]
 [ext_resource type="Texture2D" uid="uid://ixd3db33du1h" path="res://text_box_bg.png" id="2_u68tk"]
 [ext_resource type="FontFile" uid="uid://bqgxm66o0gbqn" path="res://Calistoga-Regular.ttf" id="3_4mbla"]
 [ext_resource type="Script" path="res://QuestionDisplay.gd" id="3_44xqu"]
 [ext_resource type="Script" path="res://answer_button.gd" id="5_128xi"]
-[ext_resource type="Theme" uid="uid://d0phl6esvqp11" path="res://button.tres" id="5_cp1a4"]
 [ext_resource type="Script" path="res://Next.gd" id="6_42io6"]
 
 [node name="CanvasLayer" type="CanvasLayer"]
@@ -34,7 +33,7 @@ layout_mode = 2
 offset_left = 9.0
 offset_top = 58.0
 offset_right = 968.0
-offset_bottom = 325.0
+offset_bottom = 284.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_4mbla")
 theme_override_font_sizes/font_size = 32
@@ -46,9 +45,10 @@ script = ExtResource("3_44xqu")
 
 [node name="HFlowContainer" type="HFlowContainer" parent="MarginContainer/NinePatchRect"]
 layout_mode = 0
+offset_left = 26.0
 offset_top = 348.0
-offset_right = 972.0
-offset_bottom = 461.0
+offset_right = 964.0
+offset_bottom = 463.0
 theme_override_constants/h_separation = 25
 theme_override_constants/v_separation = 15
 alignment = 1
@@ -62,7 +62,6 @@ script = ExtResource("5_128xi")
 
 [node name="Button2" type="Button" parent="MarginContainer/NinePatchRect/HFlowContainer"]
 layout_mode = 2
-theme = ExtResource("5_cp1a4")
 theme_override_fonts/font = ExtResource("3_4mbla")
 theme_override_font_sizes/font_size = 32
 text = "Answer 2"
@@ -70,7 +69,6 @@ script = ExtResource("5_128xi")
 
 [node name="Button3" type="Button" parent="MarginContainer/NinePatchRect/HFlowContainer"]
 layout_mode = 2
-theme = ExtResource("5_cp1a4")
 theme_override_fonts/font = ExtResource("3_4mbla")
 theme_override_font_sizes/font_size = 32
 text = "Answer 3"
@@ -78,11 +76,40 @@ script = ExtResource("5_128xi")
 
 [node name="Button4" type="Button" parent="MarginContainer/NinePatchRect/HFlowContainer"]
 layout_mode = 2
-theme = ExtResource("5_cp1a4")
 theme_override_fonts/font = ExtResource("3_4mbla")
 theme_override_font_sizes/font_size = 32
 text = "Anser4 Anser4 Anser4 Anser4"
 script = ExtResource("5_128xi")
+
+[node name="CorrectMessage" type="Label" parent="MarginContainer/NinePatchRect"]
+visible = false
+custom_minimum_size = Vector2(0.615, 0)
+offset_left = 8.0
+offset_top = 301.0
+offset_right = 967.0
+offset_bottom = 343.0
+theme_override_colors/font_color = Color(0.113725, 0.380392, 0.2, 1)
+theme_override_fonts/font = ExtResource("3_4mbla")
+theme_override_font_sizes/font_size = 32
+text = "Correct!"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="IncorrectMessage" type="Label" parent="MarginContainer/NinePatchRect"]
+visible = false
+custom_minimum_size = Vector2(0.615, 0)
+offset_left = 8.0
+offset_top = 301.0
+offset_right = 967.0
+offset_bottom = 343.0
+theme_override_colors/font_color = Color(0.521569, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_4mbla")
+theme_override_font_sizes/font_size = 32
+text = "Incorrect"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
 
 [node name="MenuControls" type="MarginContainer" parent="."]
 offset_left = 100.0
