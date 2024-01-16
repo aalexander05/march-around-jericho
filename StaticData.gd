@@ -1,14 +1,22 @@
 extends Node
 
-var itemData = {}
+var big_question_object = {}
+var questions = []
+var question_index = 0
 
 var filePath = "res://data.json"
 
-var currentQuestion = {}
+var current_question = {}
 
 func _ready():
-	itemData = load_json_file(filePath)
-	getNextQuestion()
+	big_question_object = load_json_file(filePath)
+	
+	for q in range(len(big_question_object)):
+		questions.push_back(big_question_object[str(q+1)])
+	
+	questions.shuffle()
+		
+	
 	
 func load_json_file(filePath : String):
 	if FileAccess.file_exists(filePath):
@@ -22,10 +30,10 @@ func load_json_file(filePath : String):
 	else:
 		print("File doesn't exist!")
 
-func getNextQuestion():
-	var rng = RandomNumberGenerator.new()
-	var my_random_number = rng.randi_range(1, len(itemData))
-	print(my_random_number)
-	currentQuestion = itemData[str(my_random_number)]
+func get_next_question():
+	current_question = questions[question_index]
+	question_index += 1;
+	if question_index >= len(questions):
+		question_index = 0
 
-	return currentQuestion
+	return current_question

@@ -45,7 +45,7 @@ func get_question():
 	already_answered = false
 	submitted_answers = []
 	clear_messages.emit()
-	current_question = StaticData.getNextQuestion()
+	current_question = StaticData.get_next_question()
 	
 	# set text
 	var new_text = current_question["Question"]
@@ -71,7 +71,7 @@ func check_question(text):
 		# (they already answered the question)
 		return
 	
-	if text == StaticData.currentQuestion["Correct Answer"]:
+	if text == StaticData.current_question["Correct Answer"]:
 		already_answered = true;
 		score += steps_can_go_if_correct
 		correct_answer.emit()
