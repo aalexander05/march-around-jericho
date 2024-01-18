@@ -1,6 +1,10 @@
 extends CanvasLayer
 
 var hide_incorrect_message_timer = 0
+var hide_correct_message_timer = 0
+var show_timer = 0
+
+signal ready_to_show_again()
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -15,6 +19,19 @@ func _process(delta):
 		if hide_incorrect_message_timer <= 0:
 			# incorrect message is shown and needs to be hidden
 			$MarginContainer/NinePatchRect/IncorrectMessage.hide()
+			
+			
+	if hide_correct_message_timer > 0:
+		hide_correct_message_timer -= delta
+		if hide_correct_message_timer <= 0:
+			show_timer = 3
+			hide()
+	
+	if show_timer > 0:
+		show_timer -= delta
+		if show_timer <= 0:
+			ready_to_show_again.emit()
+			show()
 			
 
 
@@ -66,6 +83,8 @@ func _on_game_manager_incorrect_answer():
 
 
 func _on_game_manager_correct_answer():
+	hide_correct_message_timer = 2
+	
 	
 	# in case the player quickly clicks the right answer
 	# right after the clicked the wrong answer

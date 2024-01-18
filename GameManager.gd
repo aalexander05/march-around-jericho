@@ -93,3 +93,7 @@ func check_question(text):
 		incorrect_answer.emit()
 		
 	
+
+
+func _on_canvas_layer_ready_to_show_again():
+	get_question();
