@@ -24,7 +24,7 @@ func _process(delta):
 	if hide_correct_message_timer > 0:
 		hide_correct_message_timer -= delta
 		if hide_correct_message_timer <= 0:
-			show_timer = 3
+			show_timer = 5
 			hide()
 	
 	if show_timer > 0:
