@@ -31,14 +31,16 @@ region_rect = Rect2(0, 0, 48, 48)
 [node name="QuestionDisplay" type="Label" parent="MarginContainer/NinePatchRect"]
 custom_minimum_size = Vector2(0.615, 0)
 layout_mode = 2
-offset_left = 9.0
-offset_top = 58.0
-offset_right = 968.0
-offset_bottom = 284.0
+offset_left = 7.0
+offset_top = 62.0
+offset_right = 966.0
+offset_bottom = 295.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_4mbla")
 theme_override_font_sizes/font_size = 32
-text = "This is where the question text will go. This is where the question text will go. This is where the question text will go. "
+text = "This is where the question text will go. This is where the question text will go. This is where the question text will go. 
+This is where the question text will go. 
+This is where the question text will go. "
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
@@ -116,10 +118,10 @@ autowrap_mode = 2
 [node name="PossiblePoints" type="Label" parent="MarginContainer/NinePatchRect"]
 custom_minimum_size = Vector2(0.615, 0)
 layout_mode = 2
-offset_left = 8.0
-offset_top = 56.0
-offset_right = 968.0
-offset_bottom = 98.0
+offset_left = 4.0
+offset_top = 18.0
+offset_right = 964.0
+offset_bottom = 60.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_4mbla")
 theme_override_font_sizes/font_size = 32

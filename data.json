@@ -22,7 +22,7 @@
 	"Question": "How big was Noah's ark?",
 	"Other Multiple Choice Answers": [
 	  "800 sq ft",
-	  "big as the titanic"
+	  "As big as the Titanic"
 	],
 	"Correct Answer": "300 cubits long, 50 cubits wide, and 30 cubits high",
 	"Refernece": null
@@ -132,8 +132,10 @@
   },
   "15": {
 	"Question": "Shem and Abraham's lives overlapped.",
-	"Other Multiple Choice Answers": ["FALSE"],
-	"Correct Answer": "TRUE",
+	"Other Multiple Choice Answers": [
+	  "False"
+	],
+	"Correct Answer": "True",
 	"Refernece": "https://wol.jw.org/en/wol/d/r1/lp-e/1200000060#h=6"
   },
   "16": {
@@ -157,7 +159,7 @@
 	"Refernece": "https://wol.jw.org/en/wol/d/r1/lp-e/1200000046#h=4"
   },
   "18": {
-	"Question": "When Achan took from the city of Jerico what \"[belonged] to Jehovah\" (Joshua 6:17), what items did he not take?",
+	"Question": "When Achan took from the city of Jericho what \"[belonged] to Jehovah\" (Joshua 6:17), what items did he not take?",
 	"Other Multiple Choice Answers": [
 	  "A garment from Shinar",
 	  "50-shekel gold bar",
@@ -305,7 +307,7 @@
 	"Refernece": null
   },
   "33": {
-	"Question": "Only three Roman Caesars who were ruling during the period covered by the Christian Greek Scriptures were mentioned by name. Which name is not included among them?",
+	"Question": "Only three Roman Caesars who were ruling during the period covered by the Christian Greek Scriptures were mentioned by name in the Bible. Which name is not included among them?",
 	"Other Multiple Choice Answers": [
 	  "Augustus",
 	  "Tiberius",
@@ -315,7 +317,7 @@
 	"Refernece": "https://wol.jw.org/en/wol/d/r1/lp-e/1200000852"
   },
   "34": {
-	"Question": "How many days did the 12 spies that Moses sent out preview the land?",
+	"Question": "When Moses sent out the 12 spies to survey the land of Canaan, how many days did they spend there?",
 	"Other Multiple Choice Answers": [
 	  "150",
 	  "14",
@@ -396,7 +398,7 @@
 	  "Bees"
 	],
 	"Correct Answer": "Locusts",
-	"Refernece": "Mathew 3:4"
+	"Refernece": "Matthew 3:4"
   },
   "43": {
 	"Question": "How many silver coins did Judas Iscariot receive for betraying Jesus?",
@@ -406,7 +408,7 @@
 	  "2"
 	],
 	"Correct Answer": "30",
-	"Refernece": "Mathew 26:15"
+	"Refernece": "Matthew 26:15"
   },
   "44": {
 	"Question": "What kind of bird brought food to the profit Elijah?",
@@ -425,7 +427,7 @@
 	  "Damascus"
 	],
 	"Correct Answer": "Babel",
-	"Refernece": "Gen 11:9"
+	"Refernece": "Genesis 11:9"
   },
   "46": {
 	"Question": "Adam and Eve used what kind of leaves to make clothes?",
@@ -434,7 +436,7 @@
 	  "Elm tree leaves"
 	],
 	"Correct Answer": "Fig leaves",
-	"Refernece": "Gen 3:7"
+	"Refernece": "Genesis 3:7"
   },
   "47": {
 	"Question": "Which directions were the cherubs posted to guard the garden of Eden?",
@@ -444,7 +446,7 @@
 	  "South"
 	],
 	"Correct Answer": "East",
-	"Refernece": "Gen 3:24"
+	"Refernece": "Genesis 3:24"
   },
   "48": {
 	"Question": "How many angels did Jehovah send to warn Lot to leave Sodom?",
@@ -454,7 +456,7 @@
 	  "7"
 	],
 	"Correct Answer": "2",
-	"Refernece": "Gen 19:1"
+	"Refernece": "Genesis 19:1"
   },
   "49": {
 	"Question": "What color was the stew that Esau sold his birth right for?",
@@ -463,7 +465,7 @@
 	  "The Account Doesn't Say"
 	],
 	"Correct Answer": "Red",
-	"Refernece": "Gen 25:30"
+	"Refernece": "Genesis 25:30"
   },
   "50": {
 	"Question": "What body part was dislocated when Jacob wrestled with an angel?",
@@ -473,13 +475,15 @@
 	  "Knee"
 	],
 	"Correct Answer": "Hip",
-	"Refernece": "Gen 32:25"
+	"Refernece": "Genesis 32:25"
   },
   "51": {
 	"Question": "What did Joseph's brothers do to make Jacob think his son was dead?",
-	"Other Multiple Choice Answers": ["They told him he drank bad wine"],
-	"Correct Answer": "They dipped his coat in goats blood",
-	"Refernece": "Gen 37:31"
+	"Other Multiple Choice Answers": [
+	  "They told him he drank bad wine"
+	],
+	"Correct Answer": "They dipped his coat in goat's blood",
+	"Refernece": "Genesis 37:31"
   },
   "52": {
 	"Question": "Which brother of Joseph's didn't want him killed?",
@@ -488,10 +492,10 @@
 	  "Asher"
 	],
 	"Correct Answer": "Reuben",
-	"Refernece": "Gen 37:22,29"
+	"Refernece": "Genesis 37:22,29"
   },
   "53": {
-	"Question": "Fill in the blank: Matthew 23 : 13 “Woe to you, scribes and Pharisees, _________ because you shut up the Kingdom of the heavens before men; for you yourselves do not go in, neither do you permit those on their way in to go in",
+	"Question": "Fill in the blank. (Matthew 23 : 13)\n\"Woe to you, scribes and Pharisees, ___ because you shut up the Kingdom of the heavens before men...\"",
 	"Other Multiple Choice Answers": [
 	  "Idiots!",
 	  "Morons!"
@@ -537,5 +541,178 @@
 	],
 	"Correct Answer": "Jehovah is your name",
 	"Refernece": "Sing out Joyfully Song 2"
+  },
+  "58": {
+	"Question": "Finish the song. (5 words)\n‘When we preach, when we teach, we have confidence because ___ ____ ___ ____ ___.’",
+	"Other Multiple Choice Answers": [
+	  "You will help us succeed",
+	  "We have prayed for help"
+	],
+	"Correct Answer": "It’s on you we rely",
+	"Refernece": "Song 3"
+  },
+  "59": {
+	"Question": "Fill in the blanks from this kingdom song.\n‘Where could I hide from you, Jehovah,Or be concealed, be hidden from your face?Not in the ____ nor in the highest heaven, Not in the ____ nor in the __ there is no place.’",
+	"Other Multiple Choice Answers": [
+	  "Tomb / Dark / Water",
+	  "Grave / Dark / Ocean",
+	  "Grave / Dark / Light"
+	],
+	"Correct Answer": "Grave / Dark / Sea",
+	"Refernece": "Song 5"
+  },
+  "60": {
+	"Question": "Fill in the blank. \n“We urge you, brothers, to warn the disorderly, speak consolingly to those who are depressed, support the weak, be ____ toward all.”",
+	"Other Multiple Choice Answers": [
+	  "Kind",
+	  "Good",
+	  "Forgiving"
+	],
+	"Correct Answer": "Patient",
+	"Refernece": "1 Thessalonians 5:14"
+  },
+  "61": {
+	"Question": "Fill in the blank from this scripture. \n'Love ‘does not look for its own ___.’",
+	"Other Multiple Choice Answers": [
+	  "Desire",
+	  "Advantage",
+	  "Benefit"
+	],
+	"Correct Answer": "Interest",
+	"Refernece": "1 Corinthians 13:5"
+  },
+  "62": {
+	"Question": "What nationality was the woman Jesus spoke to at the well?",
+	"Other Multiple Choice Answers": [
+	  "Greek",
+	  "Jewish",
+	  "Phoenician"
+	],
+	"Correct Answer": "Samaritan",
+	"Refernece": "John 4 :9"
+  },
+  "63": {
+	"Question": "What book of the Bible had the Ethiopian been reading, when Philip witnessed to him?",
+	"Other Multiple Choice Answers": [
+	  "Matthew",
+	  "Philippians",
+	  "Job"
+	],
+	"Correct Answer": "Isaiah",
+	"Refernece": "Acts 8:30"
+  },
+  "64": {
+	"Question": "Fill in the blank for this song lyric. \n‘Jehovah, our ____, Our strength and our might,Your name we make known Both day and night.’",
+	"Other Multiple Choice Answers": [
+	  "Friend",
+	  "God"
+	],
+	"Correct Answer": "Rock",
+	"Refernece": "Song 7"
+  },
+  "65": {
+	"Question": "Fill in the blank for this song lyric. \n‘Jehovah is our refuge, Our God in whom we trust. His ____ is our shelter; Remain in it we must.’",
+	"Other Multiple Choice Answers": [
+	  "Word, Love, Name"
+	],
+	"Correct Answer": "Shadow",
+	"Refernece": "Song 8"
+  },
+  "66": {
+	"Question": "Fill in the blank for this song lyric. \n‘Let the heavens rejoice, Let the ____ joyful be, For Jehovah has become our King!’",
+	"Other Multiple Choice Answers": [
+	  "People",
+	  "World",
+	  "Meek"
+	],
+	"Correct Answer": "Earth",
+	"Refernece": "Song 9"
+  },
+  "67": {
+	"Question": "How many fruitage of the spirit are there?",
+	"Other Multiple Choice Answers": [
+	  "7",
+	  "8",
+	  "10"
+	],
+	"Correct Answer": "9",
+	"Refernece": "Galations 5:22,23"
+  },
+  "68": {
+	"Question": "Fill in the blank. (Galatians 6:9)\n'So let us not give up in doing what is fine, for in due time we will reap if we do not ___ out.'",
+	"Other Multiple Choice Answers": [
+	  "Give",
+	  "Poop"
+	],
+	"Correct Answer": "Tire",
+	"Refernece": "Galations 6:9"
+  },
+  "69": {
+	"Question": "Complete the scripture. (Proverbs 14:12)\n’There is a way that seems right to a man, But in the end it leads to ____.’",
+	"Other Multiple Choice Answers": [
+	  "Trouble",
+	  "Tacos",
+	  "Unrighteousnesses"
+	],
+	"Correct Answer": "Death",
+	"Refernece": "Proverbs 14:12"
+  },
+  "70": {
+	"Question": "Complete the scripture. (Proverbs 14:15)\n‘The ____ person believes every word, But the shrewd one ponders each step.’",
+	"Other Multiple Choice Answers": [
+	  "Stupid",
+	  "Wicked",
+	  "Unrighteous"
+	],
+	"Correct Answer": "Naïve",
+	"Refernece": "Proverbs 14:15"
+  },
+  "71": {
+	"Question": "Complete the scripture. (Proverbs 14:17)\n‘The one who is quick to anger acts foolishly, But the man who thinks things out is ____.’",
+	"Other Multiple Choice Answers": [
+	  "Wise",
+	  "Kind",
+	  "Mild"
+	],
+	"Correct Answer": "Hated",
+	"Refernece": "Proverbs 14:17"
+  },
+  "72": {
+	"Question": "Fill in the blank. \n‘... Jehovah’s angel appeared to Joseph in a dream, saying Get up, take the young child and his mother and flee to ____, and stay there until I give you word, for Herod is about to search for the young child to kill him.’",
+	"Other Multiple Choice Answers": [
+	  "Bethlehem",
+	  "Nazareth",
+	  "Fiji"
+	],
+	"Correct Answer": "Egypt",
+	"Refernece": "Matthew 2:13"
+  },
+  "73": {
+	"Question": "Finish the scripture.\n‘So my word that goes out of my mouth will be.  It will not ___ to me without results, But it will certainly accomplish whatever is my ____, And it will have sure success in what I send it to do.‘",
+	"Other Multiple Choice Answers": [
+	  "Come / Wish",
+	  "Return / Purpose",
+	  "Come / Plan"
+	],
+	"Correct Answer": "Return / Delight",
+	"Refernece": "Isaiah 55:11"
+  },
+  "74": {
+	"Question": "Finish the scripture. (2 words)\n‘They will not cause any harm Or any ruin in all my __ ___, Because the earth will certainly be filled with the knowledge of Jehovah As the waters cover the sea.’",
+	"Other Multiple Choice Answers": [
+	  "Paradise earth",
+	  "Restored land"
+	],
+	"Correct Answer": "Holy Mountain",
+	"Refernece": "Isaiah 11:9"
+  },
+  "75": {
+	"Question": "Finish the scripture. \n‘A ____ will grow out of the stump of ___, And a sprout from his roots will bear fruit.’",
+	"Other Multiple Choice Answers": [
+	  "Limb / Trees",
+	  "Branch / David"
+	],
+	"Correct Answer": "Twig / Jesse",
+	"Refernece": "Isaiah 11:1"
   }
 }
