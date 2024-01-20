@@ -613,7 +613,9 @@
   "65": {
 	"Question": "Fill in the blank for this song lyric. \n‘Jehovah is our refuge, Our God in whom we trust. His ____ is our shelter; Remain in it we must.’",
 	"Other Multiple Choice Answers": [
-	  "Word, Love, Name"
+	  "Word",
+	  "Love",
+	  "Name"
 	],
 	"Correct Answer": "Shadow",
 	"Refernece": "Song 8"
