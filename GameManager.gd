@@ -2,7 +2,7 @@ extends Node
 
 signal change_question_text(new_text)
 signal change_question(question)
-signal correct_answer()
+signal correct_answer(score)
 signal incorrect_answer()
 signal clear_messages()
 signal set_possible_points(possible_points, original_max_possible_points)
@@ -10,6 +10,7 @@ signal set_possible_points(possible_points, original_max_possible_points)
 var current_question = {}
 var show_question = false
 var score = 0
+var laps = 0
 var steps_can_go_if_correct = 0 # set by each question's answer count
 var already_answered = false
 var submitted_answers = []
@@ -73,10 +74,17 @@ func check_question(text):
 	
 	if text == StaticData.current_question["Correct Answer"]:
 		already_answered = true;
+		
+		if steps_can_go_if_correct < 1:
+			await get_tree().create_timer(.3).timeout
+			get_question()
+			return
+		
+		correct_answer.emit(steps_can_go_if_correct)
 		score += steps_can_go_if_correct
-		correct_answer.emit()
+		laps = floor(score / 4)
 		# get_question();
-		$"../HUD".set_score(score)
+		$"../HUD".set_score(score, steps_can_go_if_correct)
 	else:
 		for a in submitted_answers:
 			if a == text:
@@ -97,3 +105,5 @@ func check_question(text):
 
 func _on_canvas_layer_ready_to_show_again():
 	get_question();
+
+

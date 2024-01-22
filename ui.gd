@@ -2,7 +2,6 @@ extends CanvasLayer
 
 var hide_incorrect_message_timer = 0
 var hide_correct_message_timer = 0
-var show_timer = 0
 
 signal ready_to_show_again()
 
@@ -24,15 +23,8 @@ func _process(delta):
 	if hide_correct_message_timer > 0:
 		hide_correct_message_timer -= delta
 		if hide_correct_message_timer <= 0:
-			show_timer = 5
 			hide()
 	
-	if show_timer > 0:
-		show_timer -= delta
-		if show_timer <= 0:
-			ready_to_show_again.emit()
-			show()
-			
 
 
 func _on_game_manager_change_question_text(new_text):
@@ -82,7 +74,7 @@ func _on_game_manager_incorrect_answer():
 	hide_incorrect_message_timer = 3
 
 
-func _on_game_manager_correct_answer():
+func _on_game_manager_correct_answer(score):
 	hide_correct_message_timer = 2
 	
 	
@@ -108,3 +100,8 @@ func _on_game_manager_set_possible_points(possible_points, original_max_possible
 	#for p in range(original_max_possible_points - possible_points):
 		#new_possible_points_text += "❌"
 	$MarginContainer/NinePatchRect/PossiblePoints.text = new_possible_points_text
+
+
+func _on_marcher_done_moving():
+	ready_to_show_again.emit()
+	show()
