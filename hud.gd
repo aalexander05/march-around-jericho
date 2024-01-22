@@ -30,6 +30,8 @@ func _process(delta):
 func set_score(score, points_last_scored):
 	$MarginContainer/Label.text = "Score: " + str(score) + " Laps: " + str(floor(score / 4))
 	
-	await get_tree().create_timer(2.2).timeout
-	points = points_last_scored
-	show_points_timer = .8
+	if points_last_scored > 0:
+		await get_tree().create_timer(2.2).timeout
+		points = points_last_scored
+		show_points_timer = .8
+	

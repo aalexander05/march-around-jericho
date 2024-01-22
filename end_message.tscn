@@ -1,0 +1,62 @@
+[gd_scene load_steps=5 format=3 uid="uid://dj07lkccfu7yp"]
+
+[ext_resource type="Script" path="res://end_message.gd" id="1_faghb"]
+[ext_resource type="Texture2D" uid="uid://ixd3db33du1h" path="res://text_box_bg.png" id="2_kw6yu"]
+[ext_resource type="FontFile" uid="uid://bqgxm66o0gbqn" path="res://Calistoga-Regular.ttf" id="3_w1k0f"]
+[ext_resource type="Script" path="res://Next.gd" id="7_dk3en"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_faghb")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+custom_minimum_size = Vector2(0.295, 0)
+offset_left = 74.0
+offset_top = 33.0
+offset_right = 1103.0
+offset_bottom = 607.0
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
+
+[node name="NinePatchRect" type="NinePatchRect" parent="MarginContainer"]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("2_kw6yu")
+region_rect = Rect2(0, 0, 48, 48)
+
+[node name="MessageLabel" type="Label" parent="MarginContainer/NinePatchRect"]
+custom_minimum_size = Vector2(0.615, 0)
+layout_mode = 2
+offset_left = 7.0
+offset_top = 62.0
+offset_right = 966.0
+offset_bottom = 295.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_w1k0f")
+theme_override_font_sizes/font_size = 32
+text = "The walls of Jericho have fallen!"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="MenuControls" type="MarginContainer" parent="."]
+offset_left = 104.0
+offset_top = 367.0
+offset_right = 1077.0
+offset_bottom = 419.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MenuControls"]
+layout_mode = 2
+theme_override_constants/separation = 285
+alignment = 1
+
+[node name="Next" type="Button" parent="MenuControls/HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_w1k0f")
+theme_override_font_sizes/font_size = 31
+text = "Continue Playing"
+script = ExtResource("7_dk3en")
+
+[connection signal="hide_end_message" from="MenuControls/HBoxContainer/Next" to="." method="_on_next_hide_end_message"]
+[connection signal="pressed" from="MenuControls/HBoxContainer/Next" to="MenuControls/HBoxContainer/Next" method="_on_pressed"]

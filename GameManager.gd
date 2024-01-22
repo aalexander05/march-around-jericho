@@ -7,6 +7,9 @@ signal incorrect_answer()
 signal clear_messages()
 signal set_possible_points(possible_points, original_max_possible_points)
 
+signal goal_reached()
+signal goal_not_reached_show_next_question()
+
 var current_question = {}
 var show_question = false
 var score = 0
@@ -20,6 +23,7 @@ var submitted_answers = []
 func _ready():
 	Signals.next_question.connect(get_question.bind())
 	Signals.answer_submitted.connect(check_question.bind())
+	Signals.reset_score.connect(reset_score.bind())
 	
 	
 	show_question = true
@@ -40,6 +44,13 @@ func _input(event):
 				show_question = true
 				get_question()
 				get_node("../CanvasLayer").show()
+		if event.keycode == KEY_Q:
+			goal_reached.emit()
+			
+		if event.keycode == KEY_1:
+			score += 4
+			laps = floor(score / 4)
+			$"../HUD".set_score(score, 0)
 			
 			
 func get_question():
@@ -82,7 +93,9 @@ func check_question(text):
 		
 		correct_answer.emit(steps_can_go_if_correct)
 		score += steps_can_go_if_correct
+		
 		laps = floor(score / 4)
+		
 		# get_question();
 		$"../HUD".set_score(score, steps_can_go_if_correct)
 	else:
@@ -101,9 +114,32 @@ func check_question(text):
 		incorrect_answer.emit()
 		
 	
+func reset_score():
+	score = 0
+	laps = 0
+	$"../HUD".set_score(score, 0)
+	$"../CityDestoyer".fix_city()
+	get_question()
+	get_node("../CanvasLayer").show()
 
 
 func _on_canvas_layer_ready_to_show_again():
 	get_question();
+	
 
 
+
+
+func _on_marcher_done_moving():
+	if laps >= 7:
+		await get_tree().create_timer(.5).timeout
+		goal_reached.emit()
+	else:
+		goal_not_reached_show_next_question.emit()
+	
+	
+
+
+func _on_city_destoyer_done_destroying_city():
+	await get_tree().create_timer(4).timeout
+	$"../EndMessage".show()

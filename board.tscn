@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://buxya1i2sigoj"]
+[gd_scene load_steps=23 format=3 uid="uid://buxya1i2sigoj"]
 
 [ext_resource type="Script" path="res://board.gd" id="1_d3f3c"]
 [ext_resource type="Texture2D" uid="uid://c6itxlrwe6e4v" path="res://Solaria Demo Update 01.png" id="1_t1u46"]
@@ -11,6 +11,8 @@
 [ext_resource type="Script" path="res://CharacterBody2D.gd" id="8_typ0w"]
 [ext_resource type="Texture2D" uid="uid://bhf07sh1ke1ev" path="res://icon.svg" id="9_eam0l"]
 [ext_resource type="Script" path="res://GameManager.gd" id="10_7tq1y"]
+[ext_resource type="Script" path="res://CityDestoyer.gd" id="12_hsjpd"]
+[ext_resource type="PackedScene" uid="uid://dj07lkccfu7yp" path="res://end_message.tscn" id="13_t8t2a"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o0qef"]
 texture = ExtResource("1_t1u46")
@@ -523,7 +525,7 @@ visible = false
 texture_filter = 1
 tile_set = SubResource("TileSet_a4xcf")
 format = 2
-layer_0/tile_data = PackedInt32Array(196604, 1441792, 5, 196605, 1507328, 5, 196606, 1179648, 12, 196607, 1507328, 5, 131072, 1507328, 5, 131073, 1179648, 11, 131074, 1507328, 5, 131075, 1179648, 9, 131076, 1572864, 5, 65533, 1179648, 10, 131069, 1179648, 12, 3, 1179648, 9, 65539, 1179648, 12, 4, 1179648, 11, 65540, 1179648, 11, -65540, 1179648, 10, -4, 1179648, 10, 65532, 1179648, 11, 131068, 1179648, 12, -65539, 1179648, 11, -3, 1179648, 10, -131069, 1179648, 10, -65533, 1179648, 12, -131068, 1179648, 10, -65532, 1179648, 10, -196607, 1179648, 10, -196608, 1179648, 10, -262144, 1179648, 10, -196609, 1179648, 12, -131073, 1179648, 10, -196606, 1179648, 10, -131074, 1179648, 12, -262143, 1179648, 10)
+layer_0/tile_data = PackedInt32Array(196604, 1441792, 5, 196605, 1507328, 5, 196606, 1441792, 5, 196607, 1507328, 5, 131072, 1507328, 5, 131073, 1441792, 5, 131074, 1507328, 5, 131075, 1441792, 5, 131076, 1572864, 5, 65533, 1179648, 10, 131069, 1441792, 5, 3, 1179648, 9, 65539, 1441792, 5, 4, 1441792, 5, 65540, 1441792, 5, -65540, 1179648, 10, -4, 1179648, 10, -65539, 1441792, 5, -131069, 1179648, 10, -131068, 1572864, 5, -196609, 1441792, 4, -131073, 1179648, 10, -196606, 1179648, 10, -131074, 1441792, 4, -262143, 1179648, 10, 65534, 1507328, 5, -65536, 1507328, 5, 2, 1441792, 5, 0, 1572864, 4, 131068, 1179648, 9, -196605, 1179648, 9)
 
 [node name="CityDoorsCrumbled1" type="TileMap" parent="."]
 visible = false
@@ -563,7 +565,7 @@ position = Vector2(-96, 0)
 position = Vector2(-98, -92)
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="Marcher"]
-position = Vector2(8, -102)
+position = Vector2(0, -100)
 script = ExtResource("8_typ0w")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Marcher/CharacterBody2D"]
@@ -588,12 +590,22 @@ libraries = {
 "": SubResource("AnimationLibrary_v4kk3")
 }
 
+[node name="CityDestoyer" type="Node" parent="."]
+script = ExtResource("12_hsjpd")
+
+[node name="EndMessage" parent="." instance=ExtResource("13_t8t2a")]
+visible = false
+
 [connection signal="change_question" from="GameManager" to="CanvasLayer" method="_on_game_manager_change_question"]
 [connection signal="change_question_text" from="GameManager" to="CanvasLayer" method="_on_game_manager_change_question_text"]
 [connection signal="clear_messages" from="GameManager" to="CanvasLayer" method="_on_game_manager_clear_messages"]
 [connection signal="correct_answer" from="GameManager" to="CanvasLayer" method="_on_game_manager_correct_answer"]
 [connection signal="correct_answer" from="GameManager" to="Marcher" method="_on_game_manager_correct_answer"]
+[connection signal="goal_not_reached_show_next_question" from="GameManager" to="CanvasLayer" method="_on_game_manager_goal_not_reached_show_next_question"]
+[connection signal="goal_reached" from="GameManager" to="CityDestoyer" method="_on_game_manager_goal_reached"]
 [connection signal="incorrect_answer" from="GameManager" to="CanvasLayer" method="_on_game_manager_incorrect_answer"]
 [connection signal="set_possible_points" from="GameManager" to="CanvasLayer" method="_on_game_manager_set_possible_points"]
 [connection signal="ready_to_show_again" from="CanvasLayer" to="GameManager" method="_on_canvas_layer_ready_to_show_again"]
+[connection signal="done_moving" from="Marcher" to="GameManager" method="_on_marcher_done_moving"]
 [connection signal="done_moving" from="Marcher" to="CanvasLayer" method="_on_marcher_done_moving"]
+[connection signal="done_destroying_city" from="CityDestoyer" to="GameManager" method="_on_city_destoyer_done_destroying_city"]

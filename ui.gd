@@ -102,6 +102,6 @@ func _on_game_manager_set_possible_points(possible_points, original_max_possible
 	$MarginContainer/NinePatchRect/PossiblePoints.text = new_possible_points_text
 
 
-func _on_marcher_done_moving():
+func _on_game_manager_goal_not_reached_show_next_question():
 	ready_to_show_again.emit()
 	show()
