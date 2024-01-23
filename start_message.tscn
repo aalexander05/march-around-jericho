@@ -28,25 +28,26 @@ region_rect = Rect2(0, 0, 48, 48)
 [node name="MessageLabel" type="Label" parent="MarginContainer/NinePatchRect"]
 custom_minimum_size = Vector2(0.615, 0)
 layout_mode = 2
-offset_left = 6.0
-offset_top = 55.0
-offset_right = 965.0
-offset_bottom = 412.0
+offset_left = 128.0
+offset_top = 69.0
+offset_right = 840.0
+offset_bottom = 371.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_26g44")
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 24
 text = "\"...But on the seventh day, you should march around the city seven times and the priests should blow the horns. When the ram’s horn is sounded—as soon as you hear the sound of the horn—all the people should shout a great war cry. Then the wall of the city will fall down flat...\" — Joshua 6:4, 5
 
-Answer the questions to march around Jericho. Reach 7 laps to see the walls fall! "
+Answer the questions to march around Jericho. 
+Reach 7 laps to see the walls fall! "
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
 [node name="MenuControls" type="MarginContainer" parent="."]
 offset_left = 103.0
-offset_top = 473.0
+offset_top = 448.0
 offset_right = 1076.0
-offset_bottom = 525.0
+offset_bottom = 500.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MenuControls"]
 layout_mode = 2

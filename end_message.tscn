@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://end_message.gd" id="1_faghb"]
 [ext_resource type="Texture2D" uid="uid://ixd3db33du1h" path="res://text_box_bg.png" id="2_kw6yu"]
 [ext_resource type="FontFile" uid="uid://bqgxm66o0gbqn" path="res://Calistoga-Regular.ttf" id="3_w1k0f"]
-[ext_resource type="Script" path="res://Next.gd" id="7_dk3en"]
+[ext_resource type="Script" path="res://ContinuePlayingButton.gd" id="4_oxij3"]
 
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource("1_faghb")
@@ -53,12 +53,12 @@ layout_mode = 2
 theme_override_constants/separation = 285
 alignment = 1
 
-[node name="Next" type="Button" parent="MenuControls/HBoxContainer"]
+[node name="ContinuePlayingButton" type="Button" parent="MenuControls/HBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_w1k0f")
 theme_override_font_sizes/font_size = 31
 text = "Continue Playing"
-script = ExtResource("7_dk3en")
+script = ExtResource("4_oxij3")
 
-[connection signal="hide_end_message" from="MenuControls/HBoxContainer/Next" to="." method="_on_next_hide_end_message"]
-[connection signal="pressed" from="MenuControls/HBoxContainer/Next" to="MenuControls/HBoxContainer/Next" method="_on_pressed"]
+[connection signal="hide_end_message" from="MenuControls/HBoxContainer/ContinuePlayingButton" to="." method="_on_next_hide_end_message"]
+[connection signal="pressed" from="MenuControls/HBoxContainer/ContinuePlayingButton" to="MenuControls/HBoxContainer/ContinuePlayingButton" method="_on_pressed"]
