@@ -24,11 +24,8 @@ func _ready():
 	Signals.next_question.connect(get_question.bind())
 	Signals.answer_submitted.connect(check_question.bind())
 	Signals.reset_score.connect(reset_score.bind())
-	
-	
-	show_question = true
-	get_question()
-	get_node("../CanvasLayer").show()
+	Signals.game_started.connect(start_game.bind())
+
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -52,6 +49,11 @@ func _input(event):
 			laps = floor(score / 4)
 			$"../HUD".set_score(score, 0)
 			
+func start_game():
+	show_question = true
+	get_question()
+	get_node("../CanvasLayer").show()
+	
 			
 func get_question():
 	already_answered = false

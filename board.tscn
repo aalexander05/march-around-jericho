@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://buxya1i2sigoj"]
+[gd_scene load_steps=24 format=3 uid="uid://buxya1i2sigoj"]
 
 [ext_resource type="Script" path="res://board.gd" id="1_d3f3c"]
 [ext_resource type="Texture2D" uid="uid://c6itxlrwe6e4v" path="res://Solaria Demo Update 01.png" id="1_t1u46"]
@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://bhf07sh1ke1ev" path="res://icon.svg" id="9_eam0l"]
 [ext_resource type="Script" path="res://GameManager.gd" id="10_7tq1y"]
 [ext_resource type="Script" path="res://CityDestoyer.gd" id="12_hsjpd"]
+[ext_resource type="PackedScene" uid="uid://dingfj5c5qsw4" path="res://start_message.tscn" id="13_0euu0"]
 [ext_resource type="PackedScene" uid="uid://dj07lkccfu7yp" path="res://end_message.tscn" id="13_t8t2a"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o0qef"]
@@ -592,6 +593,8 @@ libraries = {
 
 [node name="CityDestoyer" type="Node" parent="."]
 script = ExtResource("12_hsjpd")
+
+[node name="StartMessage" parent="." instance=ExtResource("13_0euu0")]
 
 [node name="EndMessage" parent="." instance=ExtResource("13_t8t2a")]
 visible = false

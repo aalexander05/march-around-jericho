@@ -1,0 +1,64 @@
+[gd_scene load_steps=5 format=3 uid="uid://dingfj5c5qsw4"]
+
+[ext_resource type="Script" path="res://start_message.gd" id="1_ps0p2"]
+[ext_resource type="Texture2D" uid="uid://ixd3db33du1h" path="res://text_box_bg.png" id="2_t80wr"]
+[ext_resource type="FontFile" uid="uid://bqgxm66o0gbqn" path="res://Calistoga-Regular.ttf" id="3_26g44"]
+[ext_resource type="Script" path="res://StartButton.gd" id="4_d10qf"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_ps0p2")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+custom_minimum_size = Vector2(0.295, 0)
+offset_left = 74.0
+offset_top = 33.0
+offset_right = 1103.0
+offset_bottom = 607.0
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
+
+[node name="NinePatchRect" type="NinePatchRect" parent="MarginContainer"]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("2_t80wr")
+region_rect = Rect2(0, 0, 48, 48)
+
+[node name="MessageLabel" type="Label" parent="MarginContainer/NinePatchRect"]
+custom_minimum_size = Vector2(0.615, 0)
+layout_mode = 2
+offset_left = 6.0
+offset_top = 55.0
+offset_right = 965.0
+offset_bottom = 412.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_26g44")
+theme_override_font_sizes/font_size = 32
+text = "\"...But on the seventh day, you should march around the city seven times and the priests should blow the horns. When the ram’s horn is sounded—as soon as you hear the sound of the horn—all the people should shout a great war cry. Then the wall of the city will fall down flat...\" — Joshua 6:4, 5
+
+Answer the questions to march around Jericho. Reach 7 laps to see the walls fall! "
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="MenuControls" type="MarginContainer" parent="."]
+offset_left = 103.0
+offset_top = 473.0
+offset_right = 1076.0
+offset_bottom = 525.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MenuControls"]
+layout_mode = 2
+theme_override_constants/separation = 285
+alignment = 1
+
+[node name="StartButton" type="Button" parent="MenuControls/HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_26g44")
+theme_override_font_sizes/font_size = 31
+text = "Start Playing"
+script = ExtResource("4_d10qf")
+
+[connection signal="hide_start_message" from="MenuControls/HBoxContainer/StartButton" to="." method="_on_start_button_hide_start_message"]
+[connection signal="pressed" from="MenuControls/HBoxContainer/StartButton" to="MenuControls/HBoxContainer/StartButton" method="_on_pressed"]
