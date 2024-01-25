@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://buxya1i2sigoj"]
+[gd_scene load_steps=32 format=3 uid="uid://buxya1i2sigoj"]
 
 [ext_resource type="Script" path="res://board.gd" id="1_d3f3c"]
 [ext_resource type="Texture2D" uid="uid://c6itxlrwe6e4v" path="res://Solaria Demo Update 01.png" id="1_t1u46"]
@@ -14,6 +14,8 @@
 [ext_resource type="Script" path="res://CityDestoyer.gd" id="12_hsjpd"]
 [ext_resource type="PackedScene" uid="uid://dingfj5c5qsw4" path="res://start_message.tscn" id="13_0euu0"]
 [ext_resource type="PackedScene" uid="uid://dj07lkccfu7yp" path="res://end_message.tscn" id="13_t8t2a"]
+[ext_resource type="Script" path="res://FadeIn.gd" id="15_0ptqy"]
+[ext_resource type="Texture2D" uid="uid://dm4ccxakcropm" path="res://Title.png" id="16_ekln4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o0qef"]
 texture = ExtResource("1_t1u46")
@@ -483,6 +485,78 @@ _data = {
 "WalkUp": SubResource("Animation_5y7iv")
 }
 
+[sub_resource type="Animation" id="Animation_iso1c"]
+resource_name = "FadeIn"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("FadeIn/ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_gcw47"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("FadeIn/ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4urrq"]
+_data = {
+"FadeIn": SubResource("Animation_iso1c"),
+"RESET": SubResource("Animation_gcw47")
+}
+
+[sub_resource type="Animation" id="Animation_csf5d"]
+resource_name = "FadeOut"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_utt8m"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qrdh3"]
+_data = {
+"FadeOut": SubResource("Animation_csf5d"),
+"RESET": SubResource("Animation_utt8m")
+}
+
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_d3f3c")
 
@@ -598,6 +672,32 @@ script = ExtResource("12_hsjpd")
 
 [node name="EndMessage" parent="." instance=ExtResource("13_t8t2a")]
 visible = false
+
+[node name="FadeIn" type="CanvasLayer" parent="."]
+script = ExtResource("15_0ptqy")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="FadeIn"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_4urrq")
+}
+
+[node name="ColorRect" type="ColorRect" parent="FadeIn"]
+offset_left = -79.0
+offset_top = -35.0
+offset_right = 1221.0
+offset_bottom = 708.0
+color = Color(0, 0, 0, 1)
+
+[node name="Title" type="Sprite2D" parent="FadeIn"]
+position = Vector2(585, 295)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("16_ekln4")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="FadeIn/Title"]
+libraries = {
+"": SubResource("AnimationLibrary_qrdh3")
+}
 
 [connection signal="change_question" from="GameManager" to="CanvasLayer" method="_on_game_manager_change_question"]
 [connection signal="change_question_text" from="GameManager" to="CanvasLayer" method="_on_game_manager_change_question_text"]

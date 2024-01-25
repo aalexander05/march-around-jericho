@@ -21,6 +21,7 @@ var submitted_answers = []
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	
 	Signals.next_question.connect(get_question.bind())
 	Signals.answer_submitted.connect(check_question.bind())
 	Signals.reset_score.connect(reset_score.bind())
