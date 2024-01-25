@@ -146,7 +146,7 @@ alignment = 1
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_4mbla")
 theme_override_font_sizes/font_size = 31
-text = "Next"
+text = "Skip"
 script = ExtResource("6_42io6")
 
 [connection signal="pressed" from="MarginContainer/NinePatchRect/HFlowContainer/Button" to="MarginContainer/NinePatchRect/HFlowContainer/Button" method="_on_pressed"]
