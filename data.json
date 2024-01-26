@@ -552,7 +552,7 @@
 	"Refernece": "Song 3"
   },
   "59": {
-	"Question": "Fill in the blanks from this kingdom song.\n‘Where could I hide from you, Jehovah,Or be concealed, be hidden from your face?Not in the ____ nor in the highest heaven, Not in the ____ nor in the __ there is no place.’",
+	"Question": "Fill in the blanks from this kingdom song.\n‘Where could I hide from you, Jehovah,Or be concealed, be hidden from your face? Not in the ____ nor in the highest heaven, Not in the ____ nor in the __ there is no place.’",
 	"Other Multiple Choice Answers": [
 	  "Tomb / Dark / Water",
 	  "Grave / Dark / Ocean",
@@ -716,5 +716,79 @@
 	],
 	"Correct Answer": "Twig / Jesse",
 	"Refernece": "Isaiah 11:1"
+  },
+  "76": {
+	"Question": "Guess the book:\n\"For God so loved the world, that he gave his one and only Son, that whoever believes in him should not perish, but have eternal life.\"",
+	"Other Multiple Choice Answers": [
+	  "Ecclesiastes",
+	  "Matthew"
+	],
+	"Correct Answer": "John",
+	"Refernece": "John 3:16"
+  },
+  "77": {
+	"Question": "Guess the book: \n\"Now the serpent was more subtle than any animal of the field which Yahweh God had made. He said to the woman, “Has God really said, ‘You shall not eat of any tree of the garden?’”",
+	"Other Multiple Choice Answers": [
+	  "Matthew",
+	  "Revelation"
+	],
+	"Correct Answer": "Genesis",
+	"Refernece": "Genesis 3:1"
+  },
+  "78": {
+	"Question": "Guess the book: \n\"This is eternal life, that they should know you, the only true God, and him whom you sent, Jesus Christ.\"",
+	"Other Multiple Choice Answers": [
+	  "Ezekiel",
+	  "Daniel"
+	],
+	"Correct Answer": "John",
+	"Refernece": "John 17:3"
+  },
+  "79": {
+	"Question": "Guess the book:\n\"This Good News of the Kingdom will be preached in the whole world for a testimony to all the nations, and then the end will come.\"",
+	"Other Multiple Choice Answers": [
+	  "Jonah",
+	  "Leviticus"
+	],
+	"Correct Answer": "Matthew",
+	"Refernece": "Matthew 24:14"
+  },
+  "80": {
+	"Question": "Guess the book:\n\"Behold, all souls are mine; as the soul of the father, so also the soul of the son is mine. The soul who sins, he shall die.\"",
+	"Other Multiple Choice Answers": [
+	  "Joshua",
+	  "1 John",
+	  "Proverbs"
+	],
+	"Correct Answer": "Ezekiel",
+	"Refernece": "Ezekiel 18:4"
+  },
+  "81": {
+	"Question": "Guess the book:\n\"He will wipe away every tear from their eyes. Death will be no more; neither will there be mourning, nor crying, nor pain, any more. The first things have passed away.”",
+	"Other Multiple Choice Answers": [
+	  "Hosea",
+	  "John",
+	  "James"
+	],
+	"Correct Answer": "Revelation",
+	"Refernece": "Revelation 21:4"
+  },
+  "82": {
+	"Question": "Guess the book:\n\"In the beginning, God created the heavens and the earth.\"",
+	"Other Multiple Choice Answers": [
+	  "Ecclesiastes",
+	  "Mark"
+	],
+	"Correct Answer": "Genesis",
+	"Refernece": "Genesis 1:1"
+  },
+  "83": {
+	"Question": "Guess the book:\n\"I will put hostility between you and the woman, and between your offspring and her offspring. He will bruise your head, and you will bruise his heel.\"",
+	"Other Multiple Choice Answers": [
+	  "Esther",
+	  "Numbers"
+	],
+	"Correct Answer": "Genesis",
+	"Refernece": "Genesis 3:15"
   }
 }
